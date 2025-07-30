@@ -1,12 +1,31 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-# Download the ds004100 dataset from OpenNeuro
-echo "Cloning the OpenNeuro EEG dataset..."
-git clone https://github.com/OpenNeuroDatasets/ds004100.git data/ds004100
+# 1. Figure out where this script lives, so we can reference data/ next to it
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Optional: Checkout a specific Git hash
-cd data/ds004100
-git checkout da07f99
-cd ../..
+# 2. Repo info
+REPO="https://github.com/OpenNeuroDatasets/ds004100.git"
+COMMIT="da07f99"
 
-echo "Download complete. Data is in: data/ds004100"
+# 3. Where we want the dataset
+TARGET_DIR="${SCRIPT_DIR}/data/ds004100"
+
+# 4. Make sure data/ exists
+mkdir -p "${SCRIPT_DIR}/data"
+
+if [[ -d "${TARGET_DIR}/.git" ]]; then
+  echo "→ Dataset already cloned. Updating to ${COMMIT}…"
+  cd "${TARGET_DIR}"
+  git fetch origin
+  git checkout "${COMMIT}"
+  cd - >/dev/null
+else
+  echo "→ Cloning dataset into ${TARGET_DIR}…"
+  git clone "${REPO}" "${TARGET_DIR}"
+  cd "${TARGET_DIR}"
+  git checkout "${COMMIT}"
+  cd - >/dev/null
+fi
+
+echo "Dataset ready at ${TARGET_DIR}"
