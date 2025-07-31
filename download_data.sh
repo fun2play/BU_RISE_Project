@@ -28,4 +28,7 @@ else
   cd - >/dev/null
 fi
 
+cd "${TARGET_DIR}"
+git annex get .
+
 echo "Dataset ready at ${TARGET_DIR}"
