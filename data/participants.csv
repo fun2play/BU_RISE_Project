@@ -1,0 +1,31 @@
+participant_id,age,sex,pathology,eeg_montage,HFODuration,hfocount
+sub-01,5.6,f,bilateral perinatal ischemic lesions with left predominance,10-20 system,70,767
+sub-02,1.6,f,genetic: DMN1 mutation,10-20 system,93,800
+sub-03,4.8,m,(radiologic suspicion of) FCD,10-20 system,79,233
+sub-04,12.4,f,genetic,10-20 system,124,714
+sub-05,6.6,m,"perinatal thalamic bleeding, hippocampal atrophy/sclerosis?",10-20 system,90,3529
+sub-06,3.8,f,FCD 1a,10-20 system,108,358
+sub-07,4.9,m,mMCD,10-20 system,113,888
+sub-08,5.7,f,genetic: KMT2E mutation,10-20 system,95,178
+sub-09,2.2,m,FCD 1a,10-20 system,94,143
+sub-10,11.5,m,(radiologic suspicion of) FCD,10-20 system,94,1043
+sub-11,4.7,f,"MCD R frontal, corpus callosum dysgenesis",10-20 system,93,150
+sub-12,4.1,m,perinatal stroke,10-20 system,117,577
+sub-13,0.7,m,Watanabe syndrome,10-20 system,66,232
+sub-14,7.1,f,genetic: SYN1 mutation,10-20 system,83,189
+sub-15,12.1,m,unknown etiology: genetic? DD FCD,10-20 system,128,749
+sub-16,15.8,f,"unknown etiology: genetic? (currently LGS, history of West syndrome)",10-20 system,97,104
+sub-17,11.6,f,unknown etiology: genetic?  DD FCD,10-20 system,109,195
+sub-18,7.8,f,"Glioma, corpus callosum hypoplasia, nodular perventricular heterotopia",10-20 system,129,156
+sub-19,1.5,f,(radiologic suspicion of) FCD,10-20 system,126,604
+sub-20,17.4,m,Hemiconvulsion-hemiplegia epilepsy syndrome (HHE),10-20 system,151,144
+sub-21,0.8,f,genetic: KCNA1 mutation,10-20 system,113,157
+sub-22,7.7,f,unknown etiology: genetic DD FCD left frontal,10-20 system,121,1009
+sub-23,15.3,f,unknown etiology: genetic?  DD FCD,10-20 system,96,80
+sub-24,4.8,m,postnatal stroke (aneurysma rupture),10-20 system,121,231
+sub-25,6.1,m,"intracerebral hemorrhage, prematurity, periventricular leucomalacia (history of West syndrome)",10-20 system,165,593
+sub-26,2.0,f,"bilateral MCD with polymicrogyria/FCD L frontal, corpus callosum agenesis, bilateral heterotopias etc.",10-20 system,79,51
+sub-27,8.9,m,(radiologic suspicion of) FCD,10-20 system,96,56
+sub-28,7.6,m,(radiologic suspicion of) low grade tumor,10-20 system,115,73
+sub-29,15.8,m,hippocampal sclerosis,10-20 system,100,60
+sub-30,15.7,f,unknown etiology: MRI negativ - genetic epilepsy?,10-20 system,78,62
