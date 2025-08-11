@@ -1,5 +1,18 @@
 # Investigating the Functional Characteristics of High-Frequency Oscillations Through Multitaper Spectral Methods and Regression Models Using Patient Metadata
 
+## Abstract
+Epilepsy is a common neurological disorder caused by abnormal electrical activity in the brain, resulting in recurring seizures that can lead to full-body convulsions and a loss of consciousness. To diagnose epilepsy and detect seizures, one can utilize intracranial electroencephalograms (iEEGs). iEEGs detect changes in electrical activity via electrodes directly attached in and on  the brain's surface to identify high-frequency oscillations (HFOs), which are promising predictive biomarkers for epileptogenicity. The primary objective of this research is to investigate the key characteristics of HFOs (e.g., rate, duration) based on specific patient attributes. During analysis, we utilized the HUP iEEG Epilepsy Dataset, containing interictal and ictal EEG data from fifty-eight patients with drug resistant epilepsy, who later underwent either surgical resection or laser ablation as part of their treatment. Using a publicly available HFO detector, we were able to mathematically identify the oscillations and obtain each patient’s HFO data. The program displayed the start and end times for HFOs detected in each channel, which we then collapsed and pooled to compare with patient profile data using regression. Additionally, by generating spectrograms to represent the data, our team was able to further analyze the HFOs visually. Our findings will allow us to potentially guide future research in the field of epilepsy using HFOs as a biomarker for epileptogenicity. This is especially useful since HFOs can be obtained with non-invasive procedures as well.
+
+
+This approach has established new potential connections between HFOs patterns and patient characteristics, showcasing the potential of computational HFO analysis and the role it could play in seizure identification or categorization in various demographics. 
+
+## Methodology Used
+- Multitaper Spectral Analysis (baseline normalized) - Used for Confirming Useability/Accuracy of Dataset/Labels
+- Linear Regression (AIC, lognorm, OLS, etc.)
+- Bootstrapping CI
+
+   <img width="742" height="290" alt="image" src="https://github.com/user-attachments/assets/9e933613-c496-4529-9653-19b380fd21c6" />
+
 
 ## Software Used
 Dorottya Cserpan and Ece Boran and Richard Rosch and San Pietro Lo Biundo and Georgia Ramantani and Johannes Sarnthein (2021). Dataset of EEG recordings of pediatric patients with epilepsy based on the 10-20 system . OpenNeuro. [Dataset] doi: 10.18112/openneuro.ds003555.v1.0.1
